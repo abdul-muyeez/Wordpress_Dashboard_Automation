@@ -16,7 +16,7 @@ public class ExtentFactory {
         ExtentSparkReporter reporter = new ExtentSparkReporter("./reports/Report.html");
 
         // Configure the reporter with a report name
-        reporter.config().setReportName("WebAutomation - BookHouseBD");
+        reporter.config().setReportName("Automation Testing - WordPress DashBoard");
 
         // Attach the reporter to the extentReports instance
         extentReports.attachReporter(reporter);
