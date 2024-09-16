@@ -65,6 +65,8 @@ The **TestNG** framework is used to manage the execution of test cases and provi
 The project is available on GitHub at the following link:
 [GitHub Repository - WordPress Dashboard Automation]([https://github.com/blackbox-ai/wordpress-dashboard-automation](https://github.com/abdul-muyeez/Wordpress_Dashboard_Automation))
 
+https://github.com/abdul-muyeez/Wordpress_Dashboard_Automation
+
 > **Note**: Before running the test suite, ensure that you update the `config.properties` file with your WordPress site URL, admin username, and password.
 
 ---
