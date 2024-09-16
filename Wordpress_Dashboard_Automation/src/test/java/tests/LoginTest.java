@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import drivers.PageDriver;
+import pages.CustomizationDarkMode;
 import pages.DarkMode;
 import pages.LoginPage;
 import utilities.CommonMethods;
@@ -56,6 +57,14 @@ public class LoginTest extends CommonMethods{
         DarkMode darkMode = new DarkMode(childTest);
         darkMode.validateAdminDashboardDarkMode();
     }
+
+    @Test (priority = 4)
+    public void darkModeCustomization() throws IOException {
+        childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:13px\"><b>Dark Mode Switch Customization</b></p>");
+        CustomizationDarkMode customizationDarkMode = new CustomizationDarkMode(childTest);
+        customizationDarkMode.darkModeCustomization();
+    }
+
     @AfterClass
     public void report() {
         reports.flush();
